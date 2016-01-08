@@ -13,7 +13,6 @@
 		DB4ACAFB1C3ACFF40005EE09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB4ACAFA1C3ACFF40005EE09 /* Assets.xcassets */; };
 		DB4ACAFE1C3ACFF40005EE09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB4ACAFC1C3ACFF40005EE09 /* LaunchScreen.storyboard */; };
 		DBB8E1181C3D8A84007A41A6 /* DelegateZipCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB8E1171C3D8A84007A41A6 /* DelegateZipCode.swift */; };
-		DBB8E11A1C3D8AF6007A41A6 /* DelegateCashText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB8E1191C3D8AF6007A41A6 /* DelegateCashText.swift */; };
 		DBB8E11C1C3D8B15007A41A6 /* DelegateLockableText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB8E11B1C3D8B15007A41A6 /* DelegateLockableText.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +25,6 @@
 		DB4ACAFD1C3ACFF40005EE09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB4ACAFF1C3ACFF50005EE09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBB8E1171C3D8A84007A41A6 /* DelegateZipCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelegateZipCode.swift; sourceTree = "<group>"; };
-		DBB8E1191C3D8AF6007A41A6 /* DelegateCashText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelegateCashText.swift; sourceTree = "<group>"; };
 		DBB8E11B1C3D8B15007A41A6 /* DelegateLockableText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelegateLockableText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,7 +73,6 @@
 			isa = PBXGroup;
 			children = (
 				DBB8E1171C3D8A84007A41A6 /* DelegateZipCode.swift */,
-				DBB8E1191C3D8AF6007A41A6 /* DelegateCashText.swift */,
 				DBB8E11B1C3D8B15007A41A6 /* DelegateLockableText.swift */,
 			);
 			name = Delegates;
@@ -153,7 +150,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBB8E11C1C3D8B15007A41A6 /* DelegateLockableText.swift in Sources */,
-				DBB8E11A1C3D8AF6007A41A6 /* DelegateCashText.swift in Sources */,
 				DBB8E1181C3D8A84007A41A6 /* DelegateZipCode.swift in Sources */,
 				DB4ACAF61C3ACFF40005EE09 /* ViewController.swift in Sources */,
 				DB4ACAF41C3ACFF40005EE09 /* AppDelegate.swift in Sources */,
