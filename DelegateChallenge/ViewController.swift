@@ -13,10 +13,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var zipcode: UITextField!
     @IBOutlet weak var cashtext: UITextField!
+    @IBOutlet weak var lockableText: UITextField!
+    @IBOutlet weak var switchLock: UISwitch!
     
     //text field delegate objet
     let delegateZipCode=DelegateZipCode()
-    
+    let delegatelockableText = DelegateLockableText()
+    let delegatecashtext = DelegateCashText()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +27,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         //set delegate field
         zipcode.delegate=delegateZipCode
-        cashtext.delegate=self
+        cashtext.delegate=delegatecashtext
+        lockableText.delegate=delegatelockableText
         
     }
 
@@ -34,42 +38,34 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
 
     
-    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+    override func viewDidAppear(animated: Bool) {
         
-        if let _=Int(string) {
+
+        funclock()
+    
+    }
+    
+    
+    @IBAction func ActionswitchLock(sender: UISwitch) {
+        
+        funclock()
+        
+    }
+    
+    
+    func funclock() {
+        
+        if switchLock.on {
             
-            return true
+            lockableText.tag=1
         }
         else {
-            return false
+            lockableText.tag=2
+            lockableText.endEditing(true)
         }
-        
-        
-    }
-
-    func textFieldDidEndEditing(textField: UITextField) {
-        
-        if  cashtext.text?.characters.count>0 {
-            let numberformatter = NSNumberFormatter()
-            numberformatter.numberStyle=NSNumberFormatterStyle.DecimalStyle
-            numberformatter.usesGroupingSeparator=true
-            numberformatter.maximumFractionDigits=2
-            numberformatter.minimumFractionDigits=2
-            let doubleValue = Double(textField.text!)! / 100
-            let currencyValue = "$" + numberformatter.stringFromNumber(NSNumber(double: doubleValue))!
-            cashtext.text = currencyValue;
-        }
-        
-        
     }
     
     
-    
-    func textFieldShouldBeginEditing(textField: UITextField) -> Bool {
-        cashtext.text=""
-        return true
-    }
-    
-    
+     
 }
 

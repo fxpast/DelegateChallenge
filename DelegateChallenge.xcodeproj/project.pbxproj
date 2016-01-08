@@ -14,6 +14,7 @@
 		DB4ACAFE1C3ACFF40005EE09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB4ACAFC1C3ACFF40005EE09 /* LaunchScreen.storyboard */; };
 		DBB8E1181C3D8A84007A41A6 /* DelegateZipCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB8E1171C3D8A84007A41A6 /* DelegateZipCode.swift */; };
 		DBB8E11C1C3D8B15007A41A6 /* DelegateLockableText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB8E11B1C3D8B15007A41A6 /* DelegateLockableText.swift */; };
+		DBCCA3351C3FE251006A94E4 /* DelegateCashText.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCCA3341C3FE251006A94E4 /* DelegateCashText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		DB4ACAFF1C3ACFF50005EE09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBB8E1171C3D8A84007A41A6 /* DelegateZipCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelegateZipCode.swift; sourceTree = "<group>"; };
 		DBB8E11B1C3D8B15007A41A6 /* DelegateLockableText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelegateLockableText.swift; sourceTree = "<group>"; };
+		DBCCA3341C3FE251006A94E4 /* DelegateCashText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelegateCashText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,7 @@
 		DB4ACAF21C3ACFF40005EE09 /* DelegateChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				DBB8E1161C3D8A4F007A41A6 /* Delegates */,
+				DBB8E1161C3D8A4F007A41A6 /* DelegateTextField */,
 				DB4ACAF31C3ACFF40005EE09 /* AppDelegate.swift */,
 				DB4ACAF51C3ACFF40005EE09 /* ViewController.swift */,
 				DB4ACAF71C3ACFF40005EE09 /* Main.storyboard */,
@@ -69,13 +71,14 @@
 			path = DelegateChallenge;
 			sourceTree = "<group>";
 		};
-		DBB8E1161C3D8A4F007A41A6 /* Delegates */ = {
+		DBB8E1161C3D8A4F007A41A6 /* DelegateTextField */ = {
 			isa = PBXGroup;
 			children = (
 				DBB8E1171C3D8A84007A41A6 /* DelegateZipCode.swift */,
+				DBCCA3341C3FE251006A94E4 /* DelegateCashText.swift */,
 				DBB8E11B1C3D8B15007A41A6 /* DelegateLockableText.swift */,
 			);
-			name = Delegates;
+			name = DelegateTextField;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +154,7 @@
 			files = (
 				DBB8E11C1C3D8B15007A41A6 /* DelegateLockableText.swift in Sources */,
 				DBB8E1181C3D8A84007A41A6 /* DelegateZipCode.swift in Sources */,
+				DBCCA3351C3FE251006A94E4 /* DelegateCashText.swift in Sources */,
 				DB4ACAF61C3ACFF40005EE09 /* ViewController.swift in Sources */,
 				DB4ACAF41C3ACFF40005EE09 /* AppDelegate.swift in Sources */,
 			);

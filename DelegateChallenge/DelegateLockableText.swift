@@ -12,4 +12,14 @@ import UIKit
 class DelegateLockableText: NSObject, UITextFieldDelegate {
     
     
+    func textFieldShouldBeginEditing(textField: UITextField) -> Bool {
+    
+        
+        if  textField.tag == 2 {
+            return false
+        }
+        
+         return true
+    
+    }
 }
